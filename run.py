@@ -48,7 +48,6 @@ def analyze_data(self):
     return {}
 
 
-
 # Example usage
 
 
@@ -57,7 +56,6 @@ survey_data.import_data('path/to/your/csvfile.csv')
 survey_data.parse_data()
 insights = survey_data.analyze_data()
 survey_data.export_results(insights, 'path/to/export/results.txt')
-
 
 
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
