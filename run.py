@@ -14,7 +14,18 @@ class SurveyData:
     with open(file_path, 'r') as file:
       reader = csv.reader(file)
       self.data = [row for row in reader]
-      
+
+  def analyze_data(self):
+    insights ={}
+    return insights
+
+
+
+
+
+
+
+
 
 
 
