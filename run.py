@@ -19,10 +19,11 @@ class SurveyData:
     insights ={}
     return insights
 
-
-
-
-
+  def export_results(insights, export_path):
+    with open(export_path, 'w') as file:
+      for key, value in insights.items():
+        file.write(f"{key}: {value}\n")
+        
 
 
 
