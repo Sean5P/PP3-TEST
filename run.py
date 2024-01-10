@@ -29,7 +29,7 @@ class SurveyData:
             return "Invalid Choice"
 
     def average_price(self):
-        total_price = sum(int(row['Price'].replace(',', '') for row in self.data)
+        total_price = sum(int(row['Price'].replace(',', '')) for row in self.data)
         return total_price / len(self.data)
 
     def average_mileage(self):
@@ -47,6 +47,7 @@ class SurveyData:
                 makes[make] += 1
             else:
                 makes[make] = 1
+                
         return max(makes, key=makes.get)
 
 
