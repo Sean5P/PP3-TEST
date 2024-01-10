@@ -1,5 +1,3 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
 # DataDigestor
 
 ## Overview
@@ -18,6 +16,30 @@ DataDigestor is an advanced command-line tool designed for importing, analyzing,
 - Access to a command-line interface
 
 ### Installation
-```bash
 git clone https://github.com/Sean5P/PP3-TEST-Data-Digestor.git
-cd DataDigestort each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+cd DataDigestor
+Usage
+Run the script via the command line:
+
+python DataDigestor.py path/to/input.csv path/to/output.txt
+Screenshots
+Screenshots demonstrating the tool in action:
+
+ - Showing data import functionality.
+ - Displaying data analysis results.
+
+Code Quality
+The code has been thoroughly tested and has passed all linter checks, ensuring adherence to coding standards and best practices. See the linter report here.
+
+Contributing
+We welcome contributions to the DataDigestor project! Please read our CONTRIBUTING.md file for guidelines on how to contribute.
+
+License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+Acknowledgments
+Code Institute for their understanding and patience.
+Brian Macharia for his superb support and mentorship.
+Brian Power for his reassurance and guidance under pressure.
+
+
