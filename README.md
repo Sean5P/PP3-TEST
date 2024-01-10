@@ -1,10 +1,16 @@
 # DataDigestor
 https://pp3-test-data-digestor-3a668a5b80b4.herokuapp.com/
 
+
+
 ## Overview
 DataDigestor is an advanced command-line tool designed for importing, analyzing, and exporting survey data. It simplifies the process of converting raw survey data into insightful, actionable reports, making it invaluable for researchers, data analysts, and marketing professionals.
 
-![Multi App View](README Assets/Multi App View 1.png)
+<p align="center">
+  <img src="README Assets/Multi App View 1.png" alt="Multi App Views"/>
+</p>
+
+
 
 ## Features
 - **Data Import:** Imports survey data from CSV files.
@@ -12,11 +18,13 @@ DataDigestor is an advanced command-line tool designed for importing, analyzing,
 - **Data Analysis:** Features various algorithms for in-depth data analysis.
 - **Data Export:** Allows users to export findings into structured text files.
 
-## Getting Started
+
 
 ### Prerequisites
 - Python 3.x
 - Access to a command-line interface
+
+
 
 ### Installation
 git clone https://github.com/Sean5P/PP3-TEST-Data-Digestor.git
@@ -31,24 +39,22 @@ Screenshots demonstrating the tool in action:
  - Showing data import functionality.
  - Displaying data analysis results.
 
+
+
 ### Code Quality
-The code has been thoroughly tested and has passed all linter checks, ensuring adherence to coding standards and best practices. See the linter report here.
-
-![Linter Test Results Screen Shot](README Assets/PP3 Linter Check.png)
-
-
-
+The code has been thoroughly tested and has passed all linter checks, ensuring adherence to coding standards and best practices.
 
 <p align="center">
-  <img src="README Assets/PP3 Linter Test 1.png" alt= "Linter Test Results Screen Shot"/>
+  <img src="README Assets/PP3 Linter Check.png" alt="Linter Check Validation"/>
 </p>
-
-![Alt text for the image](path/to/image.jpg)
 
 
 
 ### Contributing
 We welcome contributions to the DataDigestor project! Please read our CONTRIBUTING.md file for guidelines on how to contribute.
+(NEED TO COMPLETE THIS)
+
+
 
 ### License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
