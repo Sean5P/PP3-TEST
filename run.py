@@ -1,4 +1,5 @@
 import csv
+import.sys
 
 
 class SurveyData:
@@ -40,22 +41,21 @@ class SurveyData:
             print(f"Error writing file: {e}")
 
 
-def analyze_data(self):
-    """
-    Analyse Data and Returns Insights.
-    """
-    # Trigger Analysis Logic Here
-    return {}
+if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        print("Usage: python script_name.py [input_csv_file_path] [output_file_path]")
+        sys.exit(1)
+
+    input_csv_file_path = sys.argv[1]
+    output_file_path = sys.argv[2]
 
 
 # Example usage
 
-
 survey_data = SurveyData()
-survey_data.import_data('path/to/your/csvfile.csv')
+survey_data.import_data(input_csv_file_path)
 survey_data.parse_data()
 insights = survey_data.analyze_data()
 survey_data.export_results(insights, 'path/to/export/results.txt')
-
 
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
