@@ -4,6 +4,12 @@ https://pp3-test-data-digestor-3a668a5b80b4.herokuapp.com/
 ## Overview
 DataDigestor is an advanced command-line tool designed for importing, analyzing, and exporting survey data. It simplifies the process of converting raw survey data into insightful, actionable reports, making it invaluable for researchers, data analysts, and marketing professionals.
 
+
+<p align="center">
+  <img src="README Assets/PP3 Demo 1.png" alt= "demo photo"/>
+</p>
+
+
 ## Features
 - **Data Import:** Imports survey data from CSV files.
 - **Data Parsing:** Offers customizable parsing to organize survey data effectively.
