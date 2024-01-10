@@ -93,6 +93,7 @@ YZA890,35000,2020,Subaru,Petrol,5,21000"""
         choice = input("Enter your choice: ")
 
         if choice == '0':
+            print("Thank You, Good Bye")
             break
         else:
             result = survey_data.analyze_data(choice)
@@ -101,6 +102,3 @@ YZA890,35000,2020,Subaru,Petrol,5,21000"""
 
 if __name__ == "__main__":
     main()
-
-
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
