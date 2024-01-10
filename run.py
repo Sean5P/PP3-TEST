@@ -37,7 +37,7 @@ class SurveyData:
         return total_mileage / len(self.data)
 
     def count_evs(self):
-        return sum(1 for row in row self.data if row['Engine'] == 'EV')
+        return sum(1 for row in self.data if row['Engine'] == 'EV')
 
     def most_popular_make(self):
         makes = {}
