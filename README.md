@@ -35,18 +35,27 @@ Screenshots demonstrating the tool in action:
  - Showing data import functionality.
  - Displaying data analysis results.
 
-Code Quality
+### Code Quality
 The code has been thoroughly tested and has passed all linter checks, ensuring adherence to coding standards and best practices. See the linter report here.
 
-Contributing
+<p align="center">
+  <img src="README Assets/PP3 Linter Test 1.png" alt= "Linter Test Results Screen Shot"/>
+</p>
+
+### Contributing
 We welcome contributions to the DataDigestor project! Please read our CONTRIBUTING.md file for guidelines on how to contribute.
 
-License
+### License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
-Acknowledgments
+<p align="center">
+  <img src="README Assets/MIT Licence" alt= "MIT Licence Wording"/>
+</p>
+
+### Acknowledgments
 Code Institute for their understanding and patience.
 Brian Macharia for his superb support and mentorship.
 Brian Power for his reassurance and guidance under pressure.
+
 
 
