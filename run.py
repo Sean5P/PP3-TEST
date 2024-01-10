@@ -12,7 +12,7 @@ class SurveyData:
         Strip Whitespace from Header Names.
         """
         reader = csv.DictReader(io.StringIO(self.data))
-        self.data = [{k.strip(): v for k, v in row.items() for row in reader]
+        self.data = [{k.strip(): v for k, v in row.items()} for row in reader]
 
     def analyze_data(self, choice):
         """
@@ -31,27 +31,30 @@ class SurveyData:
 
     def average_price(self):
         try:
-        total_price = sum(int(row['Price'].replace(',', '')) for row in self.data)
-        return total_price / len(self.data)
-except KeyError:
-  return "Price Data is NOT Available"
-except ValueError:
-  return "Invalid Price Data"
+            total_price = sum(
+                int(row['Price'].replace(',', ''))
+                for row in self.data
+            )
+            return total_price / len(self.data)
+        except KeyError:
+            return "Price Data is NOT Available"
+        except ValueError:
+            return "Invalid Price Data"
 
     def average_mileage(self):
         try:
-        total_mileage = sum(int(row['Mileage']) for row in self.data)
-        return total_mileage / len(self.data)
-except KeyError
-  return "Mileage Data NOT Available"
-except ValueError
-  return "Invalid Mileage Data"
- 
+            total_mileage = sum(int(row['Mileage']) for row in self.data)
+            return total_mileage / len(self.data)
+        except KeyError:
+            return "Mileage Data NOT Available"
+        except ValueError:
+            return "Invalid Mileage Data"
+
     def count_evs(self):
         try:
-        return sum(1 for row in self.data if row['Engine'] == 'EV')
-except KeyError:
-  return "Engine Type Data NOT Available."
+            return sum(1 for row in self.data if row['Engine'] == 'EV')
+        except KeyError:
+            return "Engine Type Data NOT Available."
 
     def most_popular_make(self):
         makes = {}
@@ -61,7 +64,6 @@ except KeyError:
                 makes[make] += 1
             else:
                 makes[make] = 1
-                
         return max(makes, key=makes.get)
 
 
