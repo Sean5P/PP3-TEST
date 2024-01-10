@@ -6,13 +6,13 @@ class SurveyData:
     def __init__(self, data):
         self.data = data
 
-       def parse_data(self):
+    def parse_data(self):
         """
         Convert CSV Data String to List of Dictionaries.
         """
         reader = csv.DictReader(io.StringIO(self.data))
         self.data = [row for row in reader]
-           
+
     def analyze_data(self, choice):
         """
         Analyse Data Based on User Choice.
@@ -48,7 +48,7 @@ class SurveyData:
             else:
                 makes[make] = 1
             return max(makes, key=makes.get)
-            
+
 
 def main():
     data = """Vehicle ID, Mileage, Year, Make, Engine, Seats, Price
@@ -80,7 +80,7 @@ YZA890,35000,2020,Subaru,Petrol,5,21000"""
         else:
             result = survey_data.analyze_data(choice)
             print(f"Result: {result}")
-            
+
 
 if __name__ == "__main__":
     main()
