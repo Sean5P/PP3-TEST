@@ -50,6 +50,27 @@ The code has been thoroughly tested and has passed all linter checks, ensuring a
 
 
 
+
+
+
+
+<p align="center">
+  <img src="README Assets/PP3 Demo 1.png" alt="View 1 of App Function"/>
+</p>
+
+<p align="center">
+  <img src="README Assets/PP3 Demo 2.png" alt="View 2 of App Function"/>
+</p>
+
+<p align="center">
+  <img src="README Assets/PP3 Demo 3.png" alt="View 3 of App Function"/>
+</p>
+
+<p align="center">
+  <img src="README Assets/PP3 Demo 4.png" alt="View 4 of App Function"/>
+</p>
+
+
 ### Contributing
 We welcome contributions to the DataDigestor project! Please read our CONTRIBUTING.md file for guidelines on how to contribute.
 (NEED TO COMPLETE THIS)
@@ -60,13 +81,14 @@ We welcome contributions to the DataDigestor project! Please read our CONTRIBUTI
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 <p align="center">
-  <img src="README Assets/MIT Licence" alt= "MIT Licence Wording"/>
+  <a href="README Assets/MIT_License.txt" alt="MIT License Document">MIT License Document</a>
 </p>
+
+
 
 ### Acknowledgments
 Code Institute for their understanding and patience.
 Brian Macharia for his superb support and mentorship.
 Brian Power for his reassurance and guidance under pressure.
-
 
 
