@@ -81,7 +81,7 @@ We welcome contributions to the DataDigestor project! Please read our CONTRIBUTI
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 <p align="center">
-  <a href="README Assets/MIT License.txt" alt="MIT License Document">MIT License</a>
+  <a href="PP3-TEST-Data-Digestor/README Assets/MIT License.txt" alt="MIT License Document">MIT License</a>
 </p>
 
 
