@@ -135,8 +135,10 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 ### Acknowledgments
 Code Institute for their understanding and patience.
+
 Brian Macharia for his superb support and mentorship.
-Brian Power for his reassurance and guidance under pressure.
+
+Brian Power for his help and guidance.
 
 
 
