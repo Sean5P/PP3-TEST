@@ -1,22 +1,32 @@
 import csv
 import io
 
-
 class SurveyData:
     def __init__(self, data):
+        """
+        Initialize the SurveyData with CSV data.
+        
+        Parameters:
+            data (str): Multiline string in CSV format.
+        """
         self.data = data
 
     def parse_data(self):
         """
-        Convert CSV Data String to List of Dictionaries.
-        Strip Whitespace from Header Names.
+        Parses the CSV data string into a list of dictionaries, stripping whitespace from header names.
         """
         reader = csv.DictReader(io.StringIO(self.data))
         self.data = [{k.strip(): v for k, v in row.items()} for row in reader]
 
     def analyze_data(self, choice):
         """
-        Analyse Data Based on User Choice.
+        Analyzes data based on the user choice provided.
+
+        Parameters:
+            choice (str): The user's choice for data analysis.
+
+        Returns:
+            str or float: Result of the analysis or an error message.
         """
         if choice == '1':
             return self.average_price()
@@ -30,33 +40,56 @@ class SurveyData:
             return "Invalid Choice"
 
     def average_price(self):
+        """
+        Calculates the average price of vehicles, including handling errors for missing or invalid data.
+
+        Returns:
+            str or float: The average price or an error message.
+        """
         try:
-            total_price = sum(
-                int(row['Price'].replace(',', ''))
-                for row in self.data
-            )
-            return total_price / len(self.data)
+            total_price = sum(int(row['Price'].replace(',', '')) for row in self.data)
+            average = total_price / len(self.data)
+            return f"Average Price: ${average:,.2f}"
         except KeyError:
             return "Price Data is NOT Available"
         except ValueError:
             return "Invalid Price Data"
 
     def average_mileage(self):
+        """
+        Calculates the average mileage of vehicles, including handling errors for missing or invalid data.
+
+        Returns:
+            str or float: The average mileage or an error message.
+        """
         try:
             total_mileage = sum(int(row['Mileage']) for row in self.data)
-            return total_mileage / len(self.data)
+            average = total_mileage / len(self.data)
+            return f"Average Mileage: {average:,.0f} miles"
         except KeyError:
             return "Mileage Data NOT Available"
         except ValueError:
             return "Invalid Mileage Data"
 
     def count_evs(self):
+        """
+        Counts the number of electric vehicles (EVs) in the dataset.
+
+        Returns:
+            str or int: The count of EVs or an error message.
+        """
         try:
             return sum(1 for row in self.data if row['Engine'] == 'EV')
         except KeyError:
             return "Engine Type Data NOT Available."
 
     def most_popular_make(self):
+        """
+        Determines the most popular make of vehicle in the dataset.
+
+        Returns:
+            str: The most popular make.
+        """
         makes = {}
         for row in self.data:
             make = row['Make']
@@ -66,8 +99,11 @@ class SurveyData:
                 makes[make] = 1
         return max(makes, key=makes.get)
 
-
 def main():
+    """
+    Main function to run the survey data analysis. Prompts the user for choices and displays results.
+    """
+    # CSV data here...
     data = """Vehicle ID, Mileage, Year, Make, Engine, Seats, Price
 ABC123,50000,2003,Toyota,Petrol,5,20000
 XYZ456,70000,2005,Honda,Petrol,5,18000
@@ -80,25 +116,28 @@ STU234,65000,2017,Mercedes-Benz,Diesel,5,30000
 VWX567,40000,2022,Jeep,Diesel,2,28000
 YZA890,35000,2020,Subaru,Petrol,5,21000"""
 
+    # Initialize and parse data
     survey_data = SurveyData(data)
     survey_data.parse_data()
 
+    print("Welcome to the Vehicle Survey Data Analysis Tool!")
+    print("Instructions: Choose an option to get insights from the vehicle data.")
+
     while True:
-        print("\nChoose an Insight to View:")
-        print("1 - Average Price")
-        print("2 - Average Mileage")
-        print("3 - Count of EVs")
-        print("4 - Most Popular Make")
+        print("\nOptions:")
+        print("1 - Average Price (in Euro)")
+        print("2 - Average Mileage (in KM’s)")
+        print("3 - Count of Electric Vehicles (EVs)")
+        print("4 - Most Popular Vehicle Make")
         print("0 - EXIT")
         choice = input("Enter your choice: ")
 
         if choice == '0':
-            print("Thank You, Good Bye")
+            print("Thank You, Good Bye!")
             break
         else:
             result = survey_data.analyze_data(choice)
             print(f"Result: {result}")
-
 
 if __name__ == "__main__":
     main()
