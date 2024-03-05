@@ -65,7 +65,7 @@ class SurveyData:
         try:
             total_mileage = sum(int(row['Mileage']) for row in self.data)
             average = total_mileage / len(self.data)
-            return f"Average Mileage: {average:,.0f} KM's"
+            return f"Average Mileage: {average:,.0f} KM’s"
         except KeyError:
             return "Mileage Data NOT Available"
         except ValueError:
@@ -79,7 +79,8 @@ class SurveyData:
             str or int: The count of EVs or an error message.
         """
         try:
-            return sum(1 for row in self.data if row['Engine'] == 'EV')
+            count = sum(1 for row in self.data if row['Engine'] == 'EV')
+            return f"The Number of Electric Vehicles (EVs) is {count}"
         except KeyError:
             return "Engine Type Data NOT Available."
 
@@ -97,7 +98,8 @@ class SurveyData:
                 makes[make] += 1
             else:
                 makes[make] = 1
-        return max(makes, key=makes.get)
+        most_popular = max(makes, key=makes.get)
+        return f"The Most Popular Vehicle Make is {most_popular}"
 
 def main():
     """
