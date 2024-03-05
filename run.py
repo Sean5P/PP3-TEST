@@ -65,7 +65,7 @@ class SurveyData:
         try:
             total_mileage = sum(int(row['Mileage']) for row in self.data)
             average = total_mileage / len(self.data)
-            return f"Average Mileage: {average:,.0f} miles"
+            return f"Average Mileage: {average:,.0f} KM's"
         except KeyError:
             return "Mileage Data NOT Available"
         except ValueError:
