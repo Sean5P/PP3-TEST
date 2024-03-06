@@ -21,6 +21,6 @@ Please report bugs by creating an issue in the [issue tracker](https://github.co
 
 ## License
 
-By contributing, you agree that your contributions will be licensed under the same license as the project (usually MIT License).
+By contributing, you agree that your contributions will be licensed under the same license as the project License.
 
 Thank you for contributing to DataDigestor!
