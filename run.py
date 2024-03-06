@@ -49,7 +49,7 @@ class SurveyData:
         try:
             total_price = sum(int(row['Price'].replace(',', '')) for row in self.data)
             average = total_price / len(self.data)
-            return f"Average Price: ${average:,.2f}"
+            return f"Average Price: €{average:,.2f}"
         except KeyError:
             return "Price Data is NOT Available"
         except ValueError:
