@@ -120,7 +120,7 @@ The code has been thoroughly tested and has passed all linter checks, ensuring a
 
 ### Contributing
 We welcome contributions to the DataDigestor project!
-Please read our CONTRIBUTING.md file for guidelines on how to contribute. (NEED TO COMPLETE THIS)
+Please read our [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines on how to contribute.
 
 ### License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
