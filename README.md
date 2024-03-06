@@ -17,22 +17,38 @@ It will simplify the process of converting raw survey data into insightful, acti
 - **Data Export:** Allows Users to Export Findings into Structured Files.
 
 ### Current Features
-* From the Main Menu, users can choose from Options Available to view Results.
+* From the Welcome Page Main Menu, users are given clear Instructions on how to use the App.
 
 <p align="center">
-  <img src="README Assets/PP3 Demo 1.png" alt="View 1 of App Function"/>
+  <img src="README Assets/PP3 Welcome 1.png" alt="View 1 of App Welcome"/>
+</p>
+
+
+
+* Choosing an Option Provides Results similar to the following...
+  
+<p align="center">
+  <img src="README Assets/PP3 Demo 1.png" alt="View of App Function 1"/>
 </p>
 
 <p align="center">
-  <img src="README Assets/PP3 Demo 2.png" alt="View 2 of App Function"/>
+  <img src="README Assets/PP3 Demo 2.png" alt="View of App Function 2"/>
 </p>
 
 <p align="center">
-  <img src="README Assets/PP3 Demo 3.png" alt="View 3 of App Function"/>
+  <img src="README Assets/PP3 Demo 3.png" alt="View of App Function 3"/>
 </p>
 
 <p align="center">
-  <img src="README Assets/PP3 Demo 4.png" alt="View 4 of App Function"/>
+  <img src="README Assets/PP3 Demo 4.png" alt="View of App Function 4"/>
+</p>
+
+
+
+* Choosing Option "0" will EXIT the App.
+
+<p align="center">
+  <img src="README Assets/PP3 Demo Exit.png" alt="View of App Exit Function"/>
 </p>
 
 ### Future Features
@@ -41,8 +57,8 @@ The Intent is to Develop the application further to Include the following Featur
 - Graphical User Interface (GUI):
 Develop a user-friendly GUI for users who are less comfortable with command-line interfaces. This can include intuitive navigation, data visualization, and easy-to-use controls for data import/export.
 
-- Advanced Data Visualization:
-Integrate Data visualization Capabilities, allowing users to create graphs, charts, heatmaps etc directly from the analysed data. This can include bar charts, pie charts, scatter plots, and more.
+- Advanced-Data Visualization:
+Integrate Data visualization capabilities, allowing users to create graphs, charts, heatmaps etc directly from the analysed data. This can include bar charts, pie charts, scatter plots, and more.
 
 - Machine Learning for Predictive Analysis:
 Implement Machine Learning Algorithms to offer predictive analysis based on the survey data. This could be used to forecast trends, identify patterns, or make recommendations.
@@ -75,7 +91,7 @@ Allow users to write or customise their own data analysis scripts or modules tha
 Develop features that automatically generate insights and recommendations based on the analysed data, tailored to the user's specific goals or interests.
 
 - Mobile App Version:
-Create a mobile application version of the tool for users to access and analyse data on the go.
+Create a mobile application version of the tool for users to access and analyze data on the go.
 
 - Enhanced Security Features:
 For sensitive data, add robust security features like data encryption, secure login, and compliance with data protection regulations.
